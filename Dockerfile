@@ -1,7 +1,6 @@
 FROM node:alpine
 
-RUN apk update && apk add --no-cache nodejs &&\
-    npm install -g redoc-cli
+RUN npm install -g redoc-cli
 
 WORKDIR /data
 
